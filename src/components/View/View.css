@@ -1,0 +1,104 @@
+* {
+    font-size: 50px;
+}
+
+.quote-box {
+    background-color: white;
+    margin: 100px 200px;
+    border-radius: 10px;
+    padding: 30px;
+    height: 150px;
+}
+
+.fa {
+    font-size: 50%;
+}
+.fab {
+    font-size: 50%;
+    transition: .2s;
+}
+.fab:hover {
+    font-size: 60%;
+    transform: rotate(40deg);
+}
+.fa-quote-left {
+    margin-right: 20px;
+    float: left;
+}
+.title-autor {
+    height: 60px;
+}
+.text {
+    font-size: 50%;
+    float: left;
+}
+
+.author {
+    font-size: 45%;
+    margin-left: 80%;
+    float: right;
+    overflow: hidden;
+    width: 50%;
+    text-align: right;
+}
+
+.next-twetter-logo {
+    padding: 10px;
+}
+
+#tweet-quote {
+    color: inherit;
+}
+#id-refresh {
+    margin-top: 30px;
+    float: right;
+    margin-left: 90%;
+    cursor: pointer;
+    transition: .2s;
+}
+#id-refresh:hover {
+    font-size: 32px;
+    transform: rotate(180deg);
+}
+
+/* mobile */
+@media only screen and (max-width : 767px) {
+
+    #id-refresh {
+        margin-top: -33px;
+    } 
+    .quote-box {
+        margin: 100px 10px;
+        height: 100%;
+    }
+
+}
+
+/* tablet */
+@media only screen and (min-width : 768px) {
+
+    #id-refresh {
+        margin-top: -30px;
+    }
+
+    .quote-box {
+        margin: 100px 60px;
+        height: 180px;
+    }
+}
+
+
+/* medium desktop */
+@media only screen and (min-width : 992px) {
+    #id-refresh {
+        margin-top: 30px;
+    }
+    .quote-box {
+        margin: 100px 100px;
+    }
+}
+
+/* large desktop */
+@media only screen and (min-width : 1200px) {
+
+}
