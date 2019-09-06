@@ -3,12 +3,20 @@
 }
 
 .quote-box {
-    background-color: white;
-    margin: 100px 200px;
-    border-radius: 10px;
-    padding: 30px;
-    height: 150px;
+	background-color: white;
+	margin: 50px auto 0;
+	border-radius: 10px;
+	padding: 30px;
+	height: auto;
+	display: block;
+    width: 80%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+.quote-icon {
+    width: 70%;
+}
+
 
 .fa {
     font-size: 50%;
@@ -26,33 +34,31 @@
     float: left;
 }
 .title-autor {
-    height: 60px;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
 }
 .text {
     font-size: 50%;
-    float: left;
+    text-align: left;
+    margin-top: 5px;
 }
 
 .author {
-    font-size: 45%;
-    margin-left: 80%;
-    float: right;
-    overflow: hidden;
-    width: 50%;
-    text-align: right;
+	font-size: 45%;
+	text-align: right;
+	margin-top: 30px;
 }
 
 .next-twetter-logo {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #tweet-quote {
     color: inherit;
 }
 #id-refresh {
-    margin-top: 30px;
-    float: right;
-    margin-left: 90%;
     cursor: pointer;
     transition: .2s;
 }
@@ -61,44 +67,21 @@
     transform: rotate(180deg);
 }
 
-/* mobile */
-@media only screen and (max-width : 767px) {
+@media (max-width: 767px) {
+    .title-autor {
+        display: inline-block;
+        width: 100%;
+    }
+    .quote-icon {
+        width: inherit;
+    }
+}
 
-    #id-refresh {
-        margin-top: -33px;
-    } 
+@media (max-width: 400px) {
     .quote-box {
-        margin: 100px 10px;
-        height: 100%;
-    }
-
-}
-
-/* tablet */
-@media only screen and (min-width : 768px) {
-
-    #id-refresh {
-        margin-top: -30px;
-    }
-
-    .quote-box {
-        margin: 100px 60px;
-        height: 180px;
+        padding: 20px;
     }
 }
 
 
-/* medium desktop */
-@media only screen and (min-width : 992px) {
-    #id-refresh {
-        margin-top: 30px;
-    }
-    .quote-box {
-        margin: 100px 100px;
-    }
-}
 
-/* large desktop */
-@media only screen and (min-width : 1200px) {
-
-}

@@ -1,0 +1,26 @@
+.footer {
+	background-color: white;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+    bottom: 0;
+    font-weight: 500;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.footer-text {
+    font-size: 16px;
+    margin: 10px auto;
+    
+}
+
+.footer-text-link {
+    font-size: 16px;
+    color: inherit;
+}
+
+.footer-text-link:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}

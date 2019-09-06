@@ -6,35 +6,35 @@ const view = (props) => {
         <div id="quote-box" className="quote-box">
             <div className="title-autor">
                 <div className="quote-icon">
-                    <i className="fa fa-quote-left"/>
+                    <i className="fa fa-quote-left" />
+                    <div id="text" className="text">
+                        {props.currentQuots.title}
+                    </div>
                 </div>
-                <div id="text" className="text">
-                    {props.currentQuots.title}
-                </div>
+
                 <div id="author" className="author">
-                    {'- '+props.currentQuots.writer}
+                    {'- ' + props.currentQuots.writer}
                 </div>
             </div>
             <div className="next-twetter-logo">
-                
-                    <a
-                        id="tweet-quote"
-                        href={`https://twitter.com/intent/tweet/?text="${
-                            props.currentQuots.title
+                <a
+                    id="tweet-quote"
+                    href={`https://twitter.com/intent/tweet/?text="${
+                        props.currentQuots.title
                         }"%20-%20${props.currentQuots.writer}`}
-                        target="blank"
-                    >
-                    <i className="fab fa-twitter"/>
-                    </a>
+                    target="blank"
+                >
+                    <i className="fab fa-twitter" />
+                </a>
+                <a>
                     <i
                         id="id-refresh"
                         className="fa fa-sync-alt"
                         onClick={props.randomQuots}
                     />
-                
+                </a>
             </div>
-            
-            
+
         </div>
     )
 };
